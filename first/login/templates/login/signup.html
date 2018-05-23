@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} signup {% endblock %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static "login/css/signup.css" %}"> 
+
+{% endblock %}
+{% block body_block %}
+
+    {% if registered%}
+    <!-- page to go -->
+    {% else %}
+    <!-- heading over forms -->
+    <form method="post">
+        {% csrf_token %}
+        {{}}
+    </form>
+
+{% endblock %}
